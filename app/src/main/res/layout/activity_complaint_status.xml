@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ComplaintStatusActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ComplaintStatusScreenToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/back_icon" />
+
+
+        <TextView
+            android:id="@+id/Complaint_Status_Id_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/complaint_number_101"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ComplaintStatusScreenToolbar"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/Product_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/product"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Complaint_Status_Id_TV"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/Product_Status_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/hp_inkjet_printer"
+            android:textColor="@color/black50"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/Product_TV"
+            app:layout_constraintStart_toEndOf="@+id/Product_TV"
+            app:layout_constraintTop_toBottomOf="@+id/Complaint_Status_Id_TV"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Contact_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/contact"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Product_Status_TV"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Contact_Status_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/_91_xxxxxxxxxx"
+            android:textColor="@color/black50"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/Contact_TV"
+            app:layout_constraintTop_toBottomOf="@+id/Product_Status_TV"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Message_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/message"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Contact_Status_TV"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/Message_Status_TV"
+            android:layout_width="362dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/message_text_view"
+            android:fontFamily="@font/poppins"
+            android:padding="10dp"
+            android:text="@string/Massage_Example"
+            android:textColor="@color/black50"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Message_TV"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/StatusTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/status"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Message_Status_TV"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Complaint_Status_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/response_pending"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/StatusTV"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BackButton"
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/app_light_blue"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/back"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Complaint_Status_TV" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

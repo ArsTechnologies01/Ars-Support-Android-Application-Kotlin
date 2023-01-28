@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context=".activity.RepairingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/RepairingScreenToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/Repairing_Product_Category_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:padding="2dp"
+            android:text="@string/select_product_category"
+            android:textColor="@color/black50"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/RepairingScreenToolbar"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Repairing_Product_Category_TInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/product_category"
+            app:layout_constraintTop_toBottomOf="@id/Repairing_Product_Category_TV"
+            tools:ignore="MissingConstraints">
+
+            <AutoCompleteTextView
+                android:id="@+id/Repairing_Product_Category_Auto_Complete_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/Repairing_Product_Details_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:padding="2dp"
+            android:text="@string/product_details"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Repairing_Product_Category_TInputLayout"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/Repairing_Product_Details_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:background="@drawable/message_text_view"
+            android:hint="@string/product_details_repair"
+            android:inputType="none"
+            android:padding="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/Repairing_Product_Details_TV" />
+
+
+        <TextView
+            android:id="@+id/Repairing_Brand_Details_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:padding="4dp"
+            android:text="@string/brand_details"
+            android:textColor="@color/black50"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Repairing_Product_Details_EditText"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/Repairing_Brand_Details_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:background="@drawable/message_text_view"
+            android:hint="@string/eg_toshiba_zebra_etc"
+            android:inputType="none"
+            android:padding="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/Repairing_Brand_Details_TV" />
+
+
+        <TextView
+            android:id="@+id/Repairing_Select_Problem_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:padding="4dp"
+            android:text="@string/select_problem_repair"
+            android:textColor="@color/black50"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Repairing_Brand_Details_EditText"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Repairing_Select_Problem_TInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/problem"
+            app:layout_constraintTop_toBottomOf="@id/Repairing_Select_Problem_TV"
+            tools:ignore="MissingConstraints">
+
+            <AutoCompleteTextView
+                android:id="@+id/Repairing_Select_Problem_Auto_Complete_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Repairing_Message_TInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:hint="@string/message_repair"
+            app:hintTextColor="#4D000000"
+            app:layout_constraintTop_toBottomOf="@id/Repairing_Select_Problem_TInputLayout"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Repairing_Message_Text_Input_EditT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Click_To_Proceed_button"
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="@color/app_light_blue"
+            android:drawableEnd="@drawable/arrow_forward_white"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingStart="60dp"
+            android:paddingEnd="60dp"
+            android:text="@string/click_to_proceed"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Repairing_Message_TInputLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProductDescriptionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/productDescriptionToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/back_icon" />
+
+        <ImageView
+            android:contentDescription="@string/todo_main"
+            android:id="@+id/productDescriptionImg"
+            android:layout_width="0dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/fop_image1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productDescriptionToolbar" />
+
+        <TextView
+            android:id="@+id/productDescriptionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/product_name_product"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productDescriptionImg" />
+
+        <TextView
+            android:id="@+id/productDescriptionStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/available_stock_05"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productDescriptionName" />
+
+        <TextView
+            android:id="@+id/productDescriptionDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/description"
+            android:textColor="@color/black50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productDescriptionStock" />
+
+        <TextView
+            android:id="@+id/productDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/temp_holder_text"
+            android:textColor="@color/black50"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productDescriptionDesc" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/app_light_blue"
+            android:text="@string/get_quotation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productDesc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

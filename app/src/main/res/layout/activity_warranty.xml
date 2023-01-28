@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WarrantyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/WarrantyScreenToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/Warranty_TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/check_for_warranty_warranty"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WarrantyScreenToolbar"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Warranty_TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/serial_number"
+            android:textColor="@color/black50"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_TextView1"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/Warranty_Serial_ET"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:background="@drawable/message_text_view"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/enter_serial_number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_TextView2"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Warranty_Search_Button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Warranty_Serial_ET"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/Warranty_TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/serial_number_warranty"
+            android:textColor="@color/black50"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_Search_Button"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Warranty_TextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/product_warranty"
+            android:textColor="@color/black50"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_TextView3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Warranty_TextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/description_warranty"
+            android:textColor="@color/black50"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_TextView4"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Warranty_TextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/installed_on"
+            android:textColor="@color/black50"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_TextView5"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Warranty_TextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/warranty_valid_till"
+            android:textColor="@color/black50"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_TextView6"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Warranty_Serial_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="@string/_196826542"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toEndOf="@id/Warranty_TextView3"
+            app:layout_constraintTop_toBottomOf="@id/Warranty_Search_Button"
+            tools:ignore="MissingConstraints,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/Warranty_Product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="@string/name_of_the_product"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.029"
+            app:layout_constraintStart_toEndOf="@id/Warranty_TextView4"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_Serial_Number"
+            tools:ignore="MissingConstraints,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/Warranty_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="@string/model_number_etc"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009"
+            app:layout_constraintStart_toEndOf="@id/Warranty_TextView5"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_Product"
+            tools:ignore="MissingConstraints,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/Warranty_Installed_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="@string/_01_01_2023"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/Warranty_TextView6"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_Description"
+            app:layout_goneMarginStart="4dp"
+            tools:ignore="MissingConstraints,RtlSymmetry"
+            tools:layout_editor_absoluteY="424dp" />
+
+        <TextView
+            android:id="@+id/Warranty_Installed_Valid_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="@string/_01_01_2024"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/Warranty_TextView7"
+            app:layout_constraintTop_toBottomOf="@+id/Warranty_Installed_Date"
+            app:layout_goneMarginStart="4dp"
+            tools:ignore="MissingConstraints,RtlSymmetry"
+            tools:layout_editor_absoluteY="456dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
