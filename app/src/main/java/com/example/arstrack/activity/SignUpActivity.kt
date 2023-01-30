@@ -13,11 +13,11 @@ import java.util.*
 
 class SignUpActivity : AppCompatActivity() {
 
-    var fullName: TextInputEditText? = null
-    var email: TextInputEditText? = null
-    var phoneNumber: TextInputEditText? = null
-    var password: TextInputEditText? = null
-    var confirmPassword: TextInputEditText? = null
+    private var fullName: TextInputEditText? = null
+    private var email: TextInputEditText? = null
+    private var phoneNumber: TextInputEditText? = null
+    private var password: TextInputEditText? = null
+    private var confirmPassword: TextInputEditText? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,9 +47,9 @@ class SignUpActivity : AppCompatActivity() {
                 if (!validateName() or !validateEmail() or !validatePhoneNumber() or !validatePassword() or !validateConfirmPassword()) {
                     return@OnClickListener
                 }
-                if (Objects.requireNonNull(password?.getText())
+                if (Objects.requireNonNull(password?.text)
                         .toString() != Objects.requireNonNull(
-                        confirmPassword?.getText()
+                        confirmPassword?.text
                     ).toString()
                 ) {
                     val passwordLayout =
