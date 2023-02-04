@@ -6,6 +6,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/products_item_layout"
         android:layout_margin="5dp">
 
         <LinearLayout

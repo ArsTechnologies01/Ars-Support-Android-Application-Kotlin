@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.arstrack.R
 import com.example.arstrack.activity.models.ProductModel
@@ -30,10 +31,12 @@ public class ProductAdapter(var list: ArrayList<ProductModel>, var context: Cont
     inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var productName: TextView
         var productImage: ImageView
+        var productItemLayout : CardView
 
         init {
             productName = itemView.findViewById(R.id.product_name)
             productImage = itemView.findViewById(R.id.product_image)
+            productItemLayout = itemView.findViewById(R.id.products_item_layout)
         }
     }
 }

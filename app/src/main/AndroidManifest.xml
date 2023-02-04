@@ -13,35 +13,35 @@
         android:theme="@style/Theme.ARSTRACK"
         tools:targetApi="31">
         <activity
-            android:name=".activity.ProductsActivity"
+            android:name=".activity.productsection.ProductsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.ProductDescriptionActivity"
+            android:name=".activity.productsection.ProductDescriptionActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.NewComplaintActivity"
+            android:name=".activity.servicesection.complaints.NewComplaintActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.ComplaintStatusActivity"
+            android:name=".activity.servicesection.complaints.ComplaintStatusActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.LoginActivity"
+            android:name=".activity.authentication.LoginActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -55,35 +55,35 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.ComplaintActivity"
+            android:name=".activity.servicesection.complaints.ComplaintActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.RepairingActivity"
+            android:name=".activity.servicesection.repairing.RepairingActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.ServicesActivity"
+            android:name=".activity.servicesection.ServicesActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.WarrantyActivity"
+            android:name=".activity.servicesection.warranty.WarrantyActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.SignUpActivity"
+            android:name=".activity.authentication.SignUpActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

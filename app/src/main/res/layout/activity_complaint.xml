@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ComplaintActivity">
+    tools:context=".activity.servicesection.complaints.ComplaintActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/complaintScreenToolbar"
@@ -24,6 +24,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="24dp"
         android:overScrollMode="never"
+        android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@id/lodgeComplaintButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

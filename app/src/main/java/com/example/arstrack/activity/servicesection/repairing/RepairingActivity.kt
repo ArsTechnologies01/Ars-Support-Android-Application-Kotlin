@@ -1,4 +1,4 @@
-package com.example.arstrack.activity
+package com.example.arstrack.activity.servicesection.repairing
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -51,7 +51,8 @@ class RepairingActivity : AppCompatActivity() {
             dialog.findViewById(R.id.Confirm_Contact_Repairing_Close_IV)
         RepairingConfirmFinalButton = dialog1.findViewById(R.id.Repairing_Confirm_Final_Button)
         ConfirmRepairingCloseIV = dialog1.findViewById(R.id.Confirm_Repairing_Close_IV)
-        /* --------------Toolbar--------------- */setSupportActionBar(toolbar)
+        /* --------------Toolbar--------------- */
+        setSupportActionBar(toolbar)
         Objects.requireNonNull(supportActionBar)?.setDisplayShowTitleEnabled(false)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 

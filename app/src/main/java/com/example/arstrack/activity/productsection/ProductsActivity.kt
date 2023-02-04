@@ -1,4 +1,4 @@
-package com.example.arstrack.activity
+package com.example.arstrack.activity.productsection
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

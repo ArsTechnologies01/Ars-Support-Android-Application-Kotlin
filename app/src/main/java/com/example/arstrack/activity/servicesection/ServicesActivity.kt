@@ -1,4 +1,4 @@
-package com.example.arstrack.activity
+package com.example.arstrack.activity.servicesection
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.widget.Toolbar
 import com.example.arstrack.R
+import com.example.arstrack.activity.servicesection.complaints.ComplaintActivity
+import com.example.arstrack.activity.servicesection.repairing.RepairingActivity
+import com.example.arstrack.activity.servicesection.warranty.WarrantyActivity
 import java.util.*
 
 class ServicesActivity : AppCompatActivity() {

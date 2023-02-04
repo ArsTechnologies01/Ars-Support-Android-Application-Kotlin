@@ -1,4 +1,4 @@
-package com.example.arstrack.activity
+package com.example.arstrack.activity.authentication
 
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
@@ -7,6 +7,7 @@ import android.content.Intent
 import android.util.Patterns
 import android.view.View
 import com.example.arstrack.R
+import com.example.arstrack.activity.MainActivity
 import com.google.android.material.textfield.TextInputLayout
 import java.util.*
 

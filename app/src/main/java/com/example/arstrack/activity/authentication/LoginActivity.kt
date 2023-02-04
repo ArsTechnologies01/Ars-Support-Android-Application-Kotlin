@@ -1,4 +1,4 @@
-package com.example.arstrack.activity
+package com.example.arstrack.activity.authentication
 
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.view.View
 import com.example.arstrack.R
+import com.example.arstrack.activity.MainActivity
 
 class LoginActivity : AppCompatActivity() {
     var phoneNum: TextInputEditText? = null

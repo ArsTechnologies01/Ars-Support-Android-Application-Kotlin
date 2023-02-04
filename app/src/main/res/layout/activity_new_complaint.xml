@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     android:overScrollMode="never"
-    tools:context=".activity.NewComplaintActivity">
+    tools:context=".activity.servicesection.complaints.NewComplaintActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
