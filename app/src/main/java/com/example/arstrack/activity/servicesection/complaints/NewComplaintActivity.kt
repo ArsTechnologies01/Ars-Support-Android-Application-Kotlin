@@ -33,6 +33,7 @@ class NewComplaintActivity : AppCompatActivity() {
     var ConfirmComplaintCloseIV: ImageButton? = null
     var ComplaintDialog: Dialog? = null
     var ComplaintDialog1: Dialog? = null
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -121,6 +122,7 @@ class NewComplaintActivity : AppCompatActivity() {
                 finish()
             })
     }
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
