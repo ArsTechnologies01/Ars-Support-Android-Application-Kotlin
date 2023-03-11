@@ -13,8 +13,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:overScrollMode="never">
+        android:overScrollMode="never"
+        android:scrollbars="none">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -85,6 +85,7 @@
                 android:layout_margin="24dp"
                 android:elevation="15dp"
                 app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toTopOf="@id/productsCardView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view1">
@@ -132,6 +133,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="-5dp"
                             android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
                             android:fontFamily="@font/poppins"
                             android:text="@string/request_help_from_us"
                             android:textColor="@color/black50"
@@ -196,6 +198,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_marginTop="-5dp"
                             android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
                             android:fontFamily="@font/poppins"
                             android:text="@string/products_we_offer"
                             android:textColor="@color/black50"
@@ -270,6 +273,7 @@
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/poppins"
+                            android:lines="1"
                             android:text="@string/product_name"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
@@ -330,6 +334,7 @@
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/poppins"
+                            android:lines="1"
                             android:text="@string/product_name_main"
                             android:textColor="@color/black"
                             android:textSize="14sp" />

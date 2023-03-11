@@ -16,6 +16,7 @@ import com.example.arstrack.activity.adapters.ProductAdapter
 import com.example.arstrack.activity.dbconnection.ConnectionProvider
 import com.example.arstrack.activity.models.ProductModel
 import com.example.arstrack.activity.models.ProductTableData
+import com.facebook.shimmer.ShimmerFrameLayout
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.ResultSet
@@ -31,7 +32,7 @@ public var productDetail: ArrayList<ProductTableData>? = null
 class ProductsActivity : AppCompatActivity() {
     var toolbar: Toolbar? = null
     var recyclerView: RecyclerView? = null
-    lateinit var progressBar: ProgressBar
+    lateinit var shimmer: ShimmerFrameLayout
     private lateinit var adapter: ProductAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +43,7 @@ class ProductsActivity : AppCompatActivity() {
 
         toolbar = findViewById(R.id.productsScreenToolbar)
         recyclerView = findViewById(R.id.productScreenRecyclerView)
+        shimmer = findViewById(R.id.products_activity_shimmer)
 
         /* --------------Toolbar--------------- */
 
@@ -51,10 +53,8 @@ class ProductsActivity : AppCompatActivity() {
 
         /* --------------Recycler View-------------*/
 
-        progressBar = findViewById<ProgressBar>(R.id.progress_bar) as ProgressBar
-        progressBar.visibility = View.VISIBLE
-        val list = ArrayList<ProductModel>()
         var i = false
+        val list = ArrayList<ProductModel>()
         val service: ExecutorService = Executors.newSingleThreadExecutor()
         service.execute(Runnable {
 
@@ -74,7 +74,7 @@ class ProductsActivity : AppCompatActivity() {
                         val createdAt = resultSet.getString(6)
                         val updatedAt = resultSet.getString(7)
                         val image = resultSet.getBlob("image")
-                        list.add(ProductModel(name, image,stockCount,description))
+                        list.add(ProductModel(name, image,stockCount,description,id))
                         productDetail?.add(
                             ProductTableData(
                                 id,
@@ -100,7 +100,10 @@ class ProductsActivity : AppCompatActivity() {
                     recyclerView?.adapter = adapter
                     val layoutManager = LinearLayoutManager(this)
                     recyclerView?.layoutManager = layoutManager
-                    if (i) progressBar.visibility = View.GONE
+                    if (i) {
+                        shimmer.stopShimmer()
+                        shimmer.visibility = View.GONE
+                    }
                 }
             })
         })

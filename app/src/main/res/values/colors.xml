@@ -12,4 +12,5 @@
     <color name="app_light_blue">#00C8F4</color>
     <color name="cardV_bgColor">#F4F4F4</color>
     <color name="red">#FF0000</color>
+    <color name="shimmer_color">#DDDDDD</color>
 </resources>
